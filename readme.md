@@ -41,13 +41,6 @@ Se puede ejecutar la aplicación de diferentes maneras:
      npm install
      ```
 
-   - Navega a la carpeta raíz del cliente: `cd client`
-   - Instala las dependencias del API:
-
-     ```shell
-     npm install
-     ```
-
    - Inicia el API :
      En una terminal, inicia el API en el directorio raiz de la aplicación
 
@@ -55,7 +48,14 @@ Se puede ejecutar la aplicación de diferentes maneras:
      npm start
      ```
 
-   - En otra ventana de terminal, inicia la aplicación cliente en el directorio ./client:
+   - En otra ventana de terminal navega a la carpeta raíz del cliente: `cd client`
+   - Instala las dependencias del API:
+
+     ```shell
+     npm install
+     ```
+
+   - Inicia la aplicación cliente en el directorio ./client:
      shell
 
      ```shell
