@@ -2,6 +2,7 @@
 
 **/Dockerfile
 **/*.dockerfile
+.dockerignore
 
 package-lock.json
 
