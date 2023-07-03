@@ -11,21 +11,9 @@ Asegurarse de tener los siguientes requisitos instalados en tu sistema:
   - API express requiere Node V14.0.0
   - Cliente React requiere Node V16.20.0
 
-## Instalación
+## Descarga
 
-Seguir estos pasos para instalar y configurar el proyecto en entorno local:
-
-1. Clona este repositorio: `git clone <URL_DEL_REPOSITORIO>`
-2. Navega a la carpeta raíz del proyecto: `cd challange`
-3. Instala las dependencias del API:
-   ```shell
-   npm install
-   ```
-4. Navega a la carpeta raíz del cliente: `cd client`
-5. Instala las dependencias del API:
-   ```shell
-   npm install
-   ```
+Clona este repositorio: `https://github.com/manupaiva/csv-api-challange.git`
 
 ## Uso
 
@@ -43,19 +31,36 @@ Se puede ejecutar la aplicación de diferentes maneras:
 2. Ejecutando localmente
    Si prefieres ejecutar la aplicación localmente, sigue estos pasos:
 
-   Inicia el API :
-   En una terminal, inicia el API en el directorio raiz de la aplicación
+   Seguir estos pasos para instalar y configurar el proyecto en entorno local:
 
-   ```shell
-   npm start
-   ```
+   - Navega a la carpeta raíz del proyecto: `cd challange`
 
-   En otra ventana de terminal, inicia la aplicación cliente en el directorio ./client:
-   shell
+   - Instala las dependencias del API:
 
-   ```shell
-   npm start
-   ```
+     ```shell
+     npm install
+     ```
+
+   - Navega a la carpeta raíz del cliente: `cd client`
+   - Instala las dependencias del API:
+
+     ```shell
+     npm install
+     ```
+
+   - Inicia el API :
+     En una terminal, inicia el API en el directorio raiz de la aplicación
+
+     ```shell
+     npm start
+     ```
+
+   - En otra ventana de terminal, inicia la aplicación cliente en el directorio ./client:
+     shell
+
+     ```shell
+     npm start
+     ```
 
 3. Ejecutando los tests
    Para ejecutar los tests, asegúrate de estar en la raíz del proyecto y utiliza el siguiente comando:
