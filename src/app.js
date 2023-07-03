@@ -1,5 +1,4 @@
 import express from "express";
-
 import dataRoutes from "./routes/data.routes.js";
 
 const app = express();

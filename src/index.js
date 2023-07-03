@@ -8,7 +8,7 @@ async function main() {
       console.log(`Server listening on port ${PORT}`);
     });
   } catch (error) {
-    console.error("Unable to connect to the database:", error);
+    console.error("Unable to connect to the server:", error);
   }
 }
 main();

@@ -1,16 +1,15 @@
 export const joinJson = async (string) => {
-  //Split lines
-  let jsonObject = {};
-  const lines = string.split("\n");
-  const firstLine = lines[0].split(",");
+  let jsonObject = {}
+  const lines = string.split('\n')
+  const firstLine = lines[0].split(',')
   jsonObject = {
     file: firstLine[0],
-    lines: [],
-  };
+    lines: []
+  }
 
-  if (firstLine[0].indexOf(".csv") !== -1) {
+  if (firstLine[0].indexOf('.csv') !== -1) {
     lines.map((line) => {
-      const partsOfTheLine = line.split(",");
+      const partsOfTheLine = line.split(',')
       if (
         partsOfTheLine[1] !== undefined &&
         partsOfTheLine[1].length > 0 &&
@@ -22,11 +21,12 @@ export const joinJson = async (string) => {
         const jsonToPush = {
           text: partsOfTheLine[1],
           number: partsOfTheLine[2],
-          hex: partsOfTheLine[3],
-        };
-        jsonObject.lines.push(jsonToPush);
+          hex: partsOfTheLine[3]
+        }
+        jsonObject.lines.push(jsonToPush)
       }
-    });
-    return jsonObject;
+      return null
+    })
+    return jsonObject
   }
-};
+}

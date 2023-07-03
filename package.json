@@ -4,10 +4,14 @@
   "description": "",
   "type": "module",
   "main": "index.js",
+  "standard": {
+    "env": [ "mocha" ]
+  },
   "scripts": {
     "start": "node src/index.js",
     "dev": "nodemon src/index.js",
-    "test": "mocha"
+    "test": "mocha",
+    "lint": "standard --fix"
   },
   "author": "Manuel Paiva",
   "license": "ISC",
@@ -19,6 +23,7 @@
     "node-fetch": "^3.3.1"
   },
   "devDependencies": {
-    "nodemon": "^2.0.22"
+    "nodemon": "^2.0.22",
+    "standard": "^17.1.0"
   }
 }

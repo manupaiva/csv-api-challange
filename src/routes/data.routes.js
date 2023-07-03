@@ -1,13 +1,15 @@
 import express from "express";
-const router = express.Router();
 import {
   getFiles,
   getFile,
   getFilesList,
 } from "../controllers/files.controller.js";
+const router = express.Router();
 
 router
-  // .get('/files',healtyCheck)
+  .get("/files", (req, res) => {
+    res.status(200).json({ message: "all it's works" });
+  })
   .get("/files/data", getFiles)
   .get("/files/list", getFilesList)
   .get("/files/data/:id", getFile);

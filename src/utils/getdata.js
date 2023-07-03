@@ -1,28 +1,28 @@
-import https from "https";
+import https from 'https'
 export const getDataFromUrl = async (url) => {
   try {
-    const token = "aSuperSecretKey";
+    const token = 'aSuperSecretKey'
     const options = {
       headers: {
-        Authorization: `Bearer ${token}`,
-      },
-    };
-    let promise = new Promise((resolve, reject) => {
-      var data = "";
+        Authorization: `Bearer ${token}`
+      }
+    }
+    const promise = new Promise((resolve, reject) => {
+      let data = ''
       https.get(url, options, (res) => {
-        res.on("data", (chunk) => {
-          data += chunk;
-        });
-        res.on("end", () => {
-          resolve(data);
-        });
-      });
-    });
+        res.on('data', (chunk) => {
+          data += chunk
+        })
+        res.on('end', () => {
+          resolve(data)
+        })
+      })
+    })
 
-    let result = await promise;
+    const result = await promise
 
-    return result;
+    return result
   } catch (error) {
-    res.status(404).json({ error: error });
+    return { error }
   }
-};
+}
