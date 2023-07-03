@@ -1,0 +1,8 @@
+**/node_modules
+
+**/Dockerfile
+**/*.dockerfile
+
+package-lock.json
+
+client/dist
